@@ -32,14 +32,16 @@
 }
 
 .dropdown-menu{
-
+    position: absolute;
+    z-index: 1;
     min-width: 100px;
     top: 50px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .nav-item{
     list-style: none;
+
 }
 .nav-item:hover{
     cursor: pointer;
@@ -71,7 +73,6 @@ h1{
 }
 
 @media only screen and (min-width: 375px) { 
-
     .container {
         min-width: 290px;
     }
