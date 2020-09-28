@@ -40,7 +40,7 @@ class ClientesRegistrados extends React.Component {
         this.handleChangeNombres = this.handleChangeNombres.bind(this);
         this.handleChangeApellido = this.handleChangeApellido.bind(this);
         this.handleChangeTypeSearch = this.handleChangeTypeSearch.bind(this);
-        
+
     }
 
     componentDidMount() {
@@ -186,16 +186,16 @@ class ClientesRegistrados extends React.Component {
         let typeS = this.state.typeSearh;
         let filterData = obj.filter(
             (cliente) => {
-                if(typeS === 'numero_documento'){
+                if (typeS === 'numero_documento') {
                     return cliente.numero_documento.indexOf(this.state.search) !== -1;
-                }else if(typeS === 'correo'){
+                } else if (typeS === 'correo') {
                     return cliente.correo.indexOf(this.state.search) !== -1;
-                }else if(typeS === 'nombres'){
+                } else if (typeS === 'nombres') {
                     return cliente.nombres.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
-                }else if(typeS === 'apellidos'){
+                } else if (typeS === 'apellidos') {
                     return cliente.apellidos.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
                 }
-                
+
             })
 
         return (
@@ -256,8 +256,32 @@ class ClientesRegistrados extends React.Component {
                             </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                                <td>1192811685</td>
+                                <td>Andres David Amaya Muñoz</td>
+                                <td>andres@gmail.com</td>
+                                <td><button>opcion</button></td>
+                            </tr>
+                            <tr>
+                                <td>1192811685</td>
+                                <td>Andres David Amaya Muñoz</td>
+                                <td>andres@gmail.com</td>
+                                <td><button>opcion</button></td>
+                            </tr>
+                            <tr>
+                                <td>1192811685</td>
+                                <td>Andres David Amaya Muñoz</td>
+                                <td>andres@gmail.com</td>
+                                <td><button>opcion</button></td>
+                            </tr>
+                            <tr>
+                                <td>1192811685</td>
+                                <td>Andres David Amaya Muñoz</td>
+                                <td>andres@gmail.com</td>
+                                <td><button>opcion</button></td>
+                            </tr>
                             {
-                                filterData.map((listaCliente, index) => {
+                                /*filterData.map((listaCliente, index) => {
                                     return (
                                         <tr key={index} >
                                             <td >{listaCliente.numero_documento}</td>
@@ -270,7 +294,7 @@ class ClientesRegistrados extends React.Component {
                                             </td>
                                         </tr >
                                     )
-                                })
+                                })*/
                             }
                         </tbody>
                     </table>
