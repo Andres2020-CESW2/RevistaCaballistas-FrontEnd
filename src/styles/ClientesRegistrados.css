@@ -70,6 +70,13 @@ h1{
     }
 }
 
+@media only screen and (min-width: 375px) { 
+
+    .container {
+        min-width: 290px;
+    }
+}
+
 .searchbar{
     margin-bottom: auto;
     margin-top: auto;
