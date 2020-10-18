@@ -1,0 +1,1 @@
+web: mv ./src/environments/environment.prod.js ./src/environmnots/environment.js npm run build & node node-server/server.js
